@@ -52,7 +52,7 @@ if not os.path.exists(persistent_dir):
         docs, embeddings
     )
     print("\n--- Finishing creating Vector Store ---")
-    print(vector_store.index.ntotal)
+    print("Total Indexes : ", vector_store.index.ntotal)
 
 else:
     print("Persistent directory already exists. No need to initialize")
